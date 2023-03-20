@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="taekwondo.ico"> <!-- ikon title -->
+
+	<title>TAEKWONDO Website</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		/*menampilkan gambar sbg background halaman*/
+		body{ 
+			background: url("images/bg taekwondo.png") no-repeat top center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		/*elemen container berwarna hitam transparan*/
+		.container-fluid{
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+	</style>
+</head>
+<body class="bg-secondary text-white">
+	<!-- main content - start -->
+	<!-- NAVIGASI BAR -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="#">
+			<img src="images/ikon taekwondo.png" height="30px">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- Navbar BUTTON MENU -->
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"> <!-- button bersifat aktif -->
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Kicks</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Basic Form</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Taegeuk Form</a>
+				</li>
+			</ul>
+			<!-- Form SEARCH -->
+			<form class="form-inline mt-2 mt-md-0">
+				<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+	<!-- Container lebar 100% -->
+	<div class="container-fluid mt-5 pt-1">
+		<!-- Container tidak 100%, ada ruang sisi kiri dan kanan -->
+		<div class="container">
+			<!-- Membuat video player -->
+			<div class="card bg-dark text-white mt-4"> <!-- pakai CARD-BODY saja -->
+				<video width="100%" controls>
+					<source src="video/Taegeuk 1.mp4" type="video/mp4">Your browser does not support the video tag.
+				</video>
+			</div>
+			<!-- Deskripsi film -->
+			<div class="card bg-dark text-white mt-4">
+				<div class="card-body bg-dark">
+					<div class="row">
+						<!-- poster -->
+						<div class="col-sm-2">
+							<img src="images/taegeuk 1.png" class="img-fluid">
+						</div>
+						<!-- judul, rating, deskripsi -->
+						<div class="col-sm-10">
+							<h4>Taegeuk 1 : Taegeuk Il Jang</h4>
+							<p class="mt-0 pt-0 mb-0 pb-0 font-weight-bold">KEON</p>
+							<p class="text-justify">Melambangkan sesuatu yang besar dan maha agung yang menjadi asal dari segala sesuatu. Keon merupakan permulaan segala sesuatu yang ada di bumi dan menjadi sumber penciptaan serta kekuatan yang berasal dari langit. Langit pula yang memberikan cahaya matahari dan hujan yang membuat segala sesuatu tetap tumbuh dan hidup. Tae Geuk 1 bersifat sederhana namun dilakukan dengan penuh kekuatan dan menampakkan keperkasaan sesuai wataknya.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Rekomendasi -->
+			<div class="row mt-2 pb-4"> <!-- Grid 1 row 6 column utk 6 poster film -->
+				<div class="col-sm-2">
+					<div class="card bg-dark text-white mt-4">
+						<div class="card-body bg-dark">
+							<img src="images/taegeuk 2.png" class="img-fluid">
+						</div>
+						<div class="card-footer bg-light text-dark text-center font-weight-bold">Taegeuk 2</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="card bg-dark text-white mt-4">
+						<div class="card-body bg-dark">
+							<img src="images/taegeuk 3.png" class="img-fluid">
+						</div>
+						<div class="card-footer bg-light text-dark text-center font-weight-bold">Taegeuk 3</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="card bg-dark text-white mt-4">
+						<div class="card-body bg-dark">
+							<img src="images/basic 1.png" class="img-fluid">
+						</div>
+						<div class="card-footer bg-light text-dark text-center font-weight-bold">Basic 1</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="card bg-dark text-white mt-4">
+						<div class="card-body bg-dark">
+							<img src="images/basic 2.png" class="img-fluid">
+						</div>
+						<div class="card-footer bg-light text-dark text-center font-weight-bold">Basic 2</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="card bg-dark text-white mt-4">
+						<div class="card-body bg-dark">
+							<img src="images/dollyojagi.png" class="img-fluid">
+						</div>
+						<div class="card-footer bg-light text-dark text-center font-weight-bold">Kick: Dollyojagi</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="card bg-dark text-white mt-4">
+						<div class="card-body bg-dark">
+							<img src="images/dwijagi.png" class="img-fluid">
+						</div>
+						<div class="card-footer bg-light text-dark text-center font-weight-bold">Kick: Dwijagi</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- main content - end -->
+
+	<!-- Bootstrap core JavaScript, Placed at the end of the document so the pages load faster -->
+	<script	src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/popper.min.js"></script>
+
+</body>
+</html>
